@@ -15,7 +15,7 @@ p {
 
 .slider-container {
   display: grid;
-  width: 500px;
+  width: 50%;
   grid-template-areas: 'img img'
                       'text btn';
   grid-template-columns: 70% 30%;
@@ -32,10 +32,6 @@ p {
   display: flex;
   overflow: hidden;
   width: 412.8%;
-}
-
-.container-text {
-  grid-area: text;
 }
 
 .slider-first__img {
@@ -82,37 +78,34 @@ p {
   margin-right: 1rem;
 }
 
+.sub-container-text {
+  overflow: hidden;
+  grid-area: text;
+}
+
 .container-text {
   overflow: hidden;
-  width: 100%;
+  width: 400%;
+  display: flex
 }
 
 .slider-first__text {
-  display: inline-block;
-  transform: translate(0, 0);
-  transition-duration: 1s;
+  width: 100%;
 }
 
 
 .slider-second__text {
-  display: inline-block;
-  transform: translate(-25%, 0);
-  transition-duration: 1s;
+  width: 100%;
 }
 
 
 .slider-third__text {
-  display: inline-block;
-  transform: translate(-50%, 0);
-  transition-duration: 1s;
+  width: 100%;
 }
 
 
 .slider-fourth__text {
-  display: inline-block;
-  transform: translate(-75%, 0);
-  transition-duration: 1s;
-  width: 25%;
+  width: 100%;
 }
 
 .slider-menu {
@@ -204,4 +197,26 @@ p {
   transition-duration: 1s;
 }
 
+#slider-first:checked ~ .sub-container-text .container-text {
+  transform: translate(0, 0);
+  transition: transform;
+  transition-duration: 1s;
+}
 
+#slider-second:checked ~ .sub-container-text .container-text {
+  transform: translate(-25%, 0);
+  transition: transform;
+  transition-duration: 1s;
+}
+
+#slider-third:checked ~ .sub-container-text .container-text {
+  transform: translate(-50%, 0);
+  transition: transform;
+  transition-duration: 1s;
+}
+
+#slider-fourth:checked ~ .sub-container-text .container-text {
+  transform: translate(-75%, 0);
+  transition: transform;
+  transition-duration: 1s;
+}
