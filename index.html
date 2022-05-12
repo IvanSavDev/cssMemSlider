@@ -9,36 +9,37 @@
 </head>
 <body>
   <div class="slider-container">
-    <div class="slider-first">
-      <div class="slider-first__img"></div>
-      <p class="slider-first__test"></p>
+    <!-- <div class="slider-first"> -->
+      <input type="radio" name="slider-select" id="slider-first" class="slider-select" checked>
+      <input type="radio" name="slider-select" id="slider-second" class="slider-select">
+      <input type="radio" name="slider-select" id="slider-third" class="slider-select">
+      <input type="radio" name="slider-select" id="slider-fourth" class="slider-select">
+      <div class="container-img">
+        <div class="slider-first__img slider-img"></div>
+        <div class="slider-second__img slider-img"></div>
+        <div class="slider-third__img slider-img"></div>
+        <div class="slider-fourth__img slider-img"></div>
+      </div>
+      <div class="container-text">
+        <p class="slider-first__text">Think about it</p>
+        <p class="slider-second__text">When you won a heated dispute</p>
+        <p class="slider-third__text">NO GOD PLEASE NOOOOOOOOOOOO</p>
+        <p class="slider-fourth__text">Tired. Just tired.</p>
+      </div>
+    <div class="slider-menu">
+      <label for="slider-first" class="container-select">
+        <div class="custom-slider slider-first__input"></div>
+      </label>
+      <label for="slider-second" class="container-select">
+        <div class="custom-slider slider-second__input"></div>
+      </label>
+      <label for="slider-third" class="container-select">
+        <div class="custom-slider slider-third__input"></div>
+      </label>
+      <label for="slider-fourth" class="container-select">
+        <div class="custom-slider slider-fourth__input"></div>
+      </label>
     </div>
-    <div class="slider-second">
-      <div class="slider-second__img"></div>
-      <p class="slider-second__test"></p>
-    </div>
-    <div class="slider-third">
-      <div class="slider-third__img"></div>
-      <p class="slider-third__test"></p>
-    </div>
-    <div class="slider-fourth">
-      <div class="slider-fourth__img"></div>
-      <p class="slider-fourth__test"></p>
-    </div>
-  </div>
-  <div class="slider-menu">
-    <label for="slider-first">
-      <input type="radio" name="slider-select" id="slider-first">
-    </label>
-    <label for="slider-second">
-      <input type="radio" name="slider-select" id="slider-second">
-    </label>
-    <label for="slider-third">
-      <input type="radio" name="slider-select" id="slider-third">
-    </label>
-    <label for="slider-fourth">
-      <input type="radio" name="slider-select" id="slider-fourth">
-    </label>
   </div>
 </body>
 </html>
