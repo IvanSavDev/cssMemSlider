@@ -13,7 +13,7 @@ p {
   margin: 0;
 }
 
-.slider-container {
+.slider {
   display: grid;
   width: 40rem;
   grid-template-areas: 'img img'
@@ -24,17 +24,17 @@ p {
   background-color: rgb(222, 229, 188);
   overflow: hidden;
   margin: 1rem;
-  border: 1px solid black;
+  border: 0.1rem solid black;
 }
 
 @media (max-width: 600px) {
-  .slider-container {
+  .slider {
     grid-template-rows: 20rem 5rem;
   }
 }
 
 @media (max-width: 450px) {
-  .slider-container {
+  .slider {
     grid-template-areas: 'img'
                         'btn'
                         'text';
@@ -128,7 +128,7 @@ p {
 
 .custom-slider {
   border-radius: 50%;
-  border: 2px solid rgb(72, 78, 170);
+  border: 0.15rem solid rgb(72, 78, 170);
   width: 0.8rem;
   height: 0.8rem;
 }
